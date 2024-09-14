@@ -7,6 +7,7 @@ def is_even(num):
     else:
         return 'No'
 
+
 def even_quest(name, question_count=3):
     for n in range(question_count):
         question = random.randint(1, 100)
