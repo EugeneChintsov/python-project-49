@@ -1,11 +1,8 @@
-#!/usr/bin/env python3
 from brain_games.cli import welcome_user
 from brain_games.logic import quest
 
 
-def main():
-    Player = welcome_user()
-    name_of_game = input('Choose game type (even/calc/gcd): ').lower()
+def main(Player=welcome_user(), name_of_game='gcd'):
 
     quest(Player, name_of_game)
 
