@@ -8,7 +8,7 @@ def is_even(num):
         return 'no'
 
 
-def rand_number(begin=-10, end=10):
+def rand_number(begin=-10, end=10) -> int:
     return random.randint(begin, end)
 
 
@@ -36,6 +36,15 @@ def arifmetical_prog(first_num, diff_num, len_prog):
     for i in range(len_prog):
         prog.append(first_num + diff_num * i)
     return prog
+
+
+def is_prime(num):
+    if num < 2:
+        return 'no'
+    for i in range(2, int(num ** 0.5 + 1)):
+        if num % i == 0:
+            return 'no'
+    return 'yes'
 
 
 def quest(name, name_of_game, question_count=3):
@@ -69,6 +78,11 @@ def quest(name, name_of_game, question_count=3):
                 correct_answer = str(prog[n4])
                 prog[n4] = '..'
                 question = ' '.join(map(str, prog))
+            case 'prime':
+                Intro = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+                n1 = rand_number()
+                correct_answer = is_prime(n1)
+                question = str(n1)
             case _:
                 print('GoodBye!')
                 break
