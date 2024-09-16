@@ -15,3 +15,6 @@ https://asciinema.org/a/hMg0W8PJBryZWoJVKwTDO8uxD
 
 *Try to calculate:*
 https://asciinema.org/a/jkrhOEiwK4xbtmKFgl7ed4kzq
+
+*What number is missing in the progression?*
+https://asciinema.org/a/OPAYJ1p0WnrK1EM3FgkIAH5L9

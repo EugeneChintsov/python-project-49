@@ -31,9 +31,21 @@ def gcd(n1, n2):
         return gcd(n2, n1 % n2)
 
 
+def arifmetical_prog(first_num, diff_num, len_prog):
+    prog = []
+    for i in range(len_prog):
+        prog.append(first_num + diff_num * i)
+    return prog
+
+
 def quest(name, name_of_game, question_count=3):
     for n in range(question_count):
         match name_of_game:
+            case 'even':
+                Intro = 'Answer "yes" if the number is even, otherwise answer "no".'
+                n1 = rand_number()
+                correct_answer = is_even(n1)
+                question = str(n1)
             case 'calc':
                 Intro = 'What is the result of the expression?'
                 operator = random.choice(['+', '-', '*', '/'])
@@ -41,17 +53,22 @@ def quest(name, name_of_game, question_count=3):
                 n2 = rand_number()
                 correct_answer = str(calc(operator, n1, n2))
                 question = f'{n1} {operator} {n2}'
-            case 'even':
-                Intro = 'Answer "yes" if the number is even, otherwise answer "no".'
-                n1 = rand_number()
-                correct_answer = is_even(n1)
-                question = n1
             case 'gcd':
                 Intro = 'Find the greatest common divisor of given numbers.'
                 n1 = rand_number()
                 n2 = rand_number()
                 correct_answer = str(abs(gcd(n1, n2)))
                 question = f'{n1} and {n2}'
+            case 'progression':
+                Intro = 'What number is missing in the progression?'
+                n1 = rand_number()
+                n2 = rand_number(1, 10)
+                n3 = rand_number(5, 10)
+                n4 = rand_number(0, n3 - 1)
+                prog = arifmetical_prog(n1, n2, n3)
+                correct_answer = str(prog[n4])
+                prog[n4] = '..'
+                question = ' '.join(map(str, prog))
             case _:
                 print('GoodBye!')
                 break
