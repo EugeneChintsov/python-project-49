@@ -1,10 +1,10 @@
-from brain_games.cli import welcome_user
-from brain_games.logic import quest
+#!/usr/bin/env python3
+import brain_games.engine as engine
+import brain_games.games.prime as game
 
 
-def main(Player=welcome_user(), name_of_game='prime'):
-
-    quest(Player, name_of_game)
+def main():
+    engine.run(game)
 
 
 if __name__ == '__main__':

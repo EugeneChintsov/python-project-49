@@ -15,9 +15,9 @@ package-install:
 
 package-uninstall:
 	python3 -m pip uninstall hexlet-code || True
-	rm -rfv ./dist/*
 
 lint:
 	poetry run flake8 brain_games
 
-deploy: package-uninstall build publish package-install
+deploy-publish: package-uninstall build publish package-install
+deploy: package-uninstall build package-install

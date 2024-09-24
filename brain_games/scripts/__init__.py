@@ -1,1 +1,1 @@
-Name = 'scripts package'
+

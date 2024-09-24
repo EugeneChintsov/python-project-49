@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.5.0"
+version = "0.6.0"
 description = "only brain_games"
 authors = ["Eugene Chintsov <tr.e.chintsov@gmail.com>"]
 readme = "README.md"
@@ -24,7 +24,7 @@ build-backend = "poetry.core.masonry.api"
 
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games_main:main"
+brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
