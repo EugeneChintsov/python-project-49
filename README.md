@@ -6,7 +6,7 @@
 **Video instructions, how to setup and play brain-games:**
 
 *Setup:*
-https://asciinema.org/a/p7YcOp6CH1aITP4Z6qqHbhVBw
+[![asciinema]https://asciinema.org/a/p7YcOp6CH1aITP4Z6qqHbhVBw
 
 *Find greatest common divisor:*
 https://asciinema.org/a/iUKTWDLXQTOOgYd1MyLKnEm55
