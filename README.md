@@ -3,9 +3,10 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/fbb70d498d4bd1d54bda/maintainability)](https://codeclimate.com/github/EugeneChintsov/python-project-49/maintainability)
 
-**Video instruction, how to setup and play brain-games:**
+**Video instructions, how to setup and play brain-games:**
 
-https://asciinema.org/a/daYOrX4IljxczMUGefqoQ1A4Z
+*Setup:*
+https://asciinema.org/a/p7YcOp6CH1aITP4Z6qqHbhVBw
 
 *Find greatest common divisor:*
 https://asciinema.org/a/iUKTWDLXQTOOgYd1MyLKnEm55
