@@ -10,7 +10,7 @@ def run(game):
     description = game.DESCRIPTION
     print('Welcome to the Brain Games!')
     username = prompt.string('May I have your name? \n')
-    print(f'Hello,{username}!')
+    print(f'Hello, {username}!')
     print(description)
     for n in range(QUESTION_COUNT):
         question, correct_answer = game.get_parametres()
