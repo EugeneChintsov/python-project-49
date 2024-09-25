@@ -13,7 +13,7 @@ def run(game):
     print(f'Hello, {username}!')
     print(description)
     for n in range(QUESTION_COUNT):
-        question, correct_answer = game.get_parametres()
+        question, correct_answer = game.get_parameters()
         print(f'Question: {question} ')
         answer = prompt.string('Your answer: ')
         if correct_answer == answer:

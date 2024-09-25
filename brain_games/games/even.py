@@ -15,7 +15,7 @@ def is_even(num: int) -> str:
         return 'no'
 
 
-def get_parametres() -> tuple[str, str]:
+def get_parameters() -> tuple[str, str]:
     """Release game logic and return parameters for game engine"""
     number = randint(MIN_NUMBER, MAX_NUMBER)
     correct_answer = is_even(number)

@@ -15,7 +15,7 @@ def gcd(num1: int, num2: int) -> int:
         return gcd(num2, num1 % num2)
 
 
-def get_parametres() -> tuple[str, str]:
+def get_parameters() -> tuple[str, str]:
     """Release game logic and return parameters for game engine"""
     number1 = randint(MIN_NUMBER, MAX_NUMBER)
     number2 = randint(MIN_NUMBER, MAX_NUMBER)

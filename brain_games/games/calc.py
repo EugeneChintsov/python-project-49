@@ -19,7 +19,7 @@ def calculate(operator: str, num1: int, num2: int) -> int:
     return result
 
 
-def get_parametres() -> tuple[str, str]:
+def get_parameters() -> tuple[str, str]:
     """Release game logic and return parameters for game engine"""
     operator = choice('+-*')
     number1 = randint(MIN_NUMBER, MAX_NUMBER)

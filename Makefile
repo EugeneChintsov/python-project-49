@@ -20,4 +20,4 @@ lint:
 	poetry run flake8 brain_games
 
 deploy-publish: package-uninstall build publish package-install
-deploy: package-uninstall build package-install
+deploy: build package-install

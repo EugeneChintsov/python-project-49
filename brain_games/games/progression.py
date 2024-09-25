@@ -19,7 +19,7 @@ def arithmetic_prog(first_num: int, step_num: int, length: int) -> list:
     return progression
 
 
-def get_parametres() -> tuple[str, str]:
+def get_parameters() -> tuple[str, str]:
     """Release game logic and return parameters for game engine"""
     first_number = randint(MIN_NUMBER, MAX_NUMBER)
     step = randint(MIN_STEP, MAX_STEP)
