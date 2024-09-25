@@ -20,5 +20,5 @@ def get_parametres() -> tuple[str, str]:
     number1 = randint(MIN_NUMBER, MAX_NUMBER)
     number2 = randint(MIN_NUMBER, MAX_NUMBER)
     correct_answer = str(abs(gcd(number1, number2)))
-    question = f'{number1} and {number2}'
+    question = f'{number1} {number2}'
     return question, correct_answer
