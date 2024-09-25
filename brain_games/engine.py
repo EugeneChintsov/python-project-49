@@ -1,3 +1,4 @@
+"""This module describes the general logic for all games."""
 import prompt
 
 
@@ -5,6 +6,7 @@ QUESTION_COUNT = 3
 
 
 def run(game):
+    """Launches the game using the passed game parameters."""
     description = game.DESCRIPTION
     print('Welcome to the Brain Games!')
     username = prompt.string('May I have your name? \n')

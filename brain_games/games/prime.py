@@ -1,3 +1,4 @@
+"""This module describes the logic of the game brain-prime."""
 from random import randint
 
 
@@ -7,6 +8,7 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num: int) -> str:
+    """Determines whether a number is prime and returns the answer."""
     FIRST_DIVIDER = 2
     middle_divider = int(num ** 0.5 + 1)
     if num < FIRST_DIVIDER:
@@ -18,6 +20,7 @@ def is_prime(num: int) -> str:
 
 
 def get_parametres() -> tuple[str, str]:
+    """Release game logic and return parameters for game engine"""
     number = randint(MIN_NUMBER, MAX_NUMBER)
     correct_answer = is_prime(number)
     question = str(number)

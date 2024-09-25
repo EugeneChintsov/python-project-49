@@ -1,3 +1,4 @@
+"""This module describes the logic of the game brain-progression."""
 from random import randint
 
 
@@ -11,6 +12,7 @@ DESCRIPTION = 'What number is missing in the progression?'
 
 
 def arithmetic_prog(first_num: int, step_num: int, length: int) -> list:
+    """Creates an arithmetic progression based on given parameters."""
     progression = []
     for i in range(length):
         progression.append(first_num + step_num * i)
@@ -18,6 +20,7 @@ def arithmetic_prog(first_num: int, step_num: int, length: int) -> list:
 
 
 def get_parametres() -> tuple[str, str]:
+    """Release game logic and return parameters for game engine"""
     first_number = randint(MIN_NUMBER, MAX_NUMBER)
     step = randint(MIN_STEP, MAX_STEP)
     length = randint(MIN_LENGTH, MAX_LENGTH)
