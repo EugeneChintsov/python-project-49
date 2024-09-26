@@ -11,21 +11,21 @@ MAX_LENGTH = 10
 DESCRIPTION = 'What number is missing in the progression?'
 
 
-def arithmetic_prog(first_num: int, step_num: int, length: int) -> list:
+def generate_progression(first_num: int, step: int, length: int) -> list[int]:
     """Creates an arithmetic progression based on given parameters."""
     progression = []
     for i in range(length):
-        progression.append(first_num + step_num * i)
+        progression.append(first_num + step * i)
     return progression
 
 
-def get_parameters() -> tuple[str, str]:
+def generate_game() -> tuple[str, str]:
     """Release game logic and return parameters for game engine"""
     first_number = randint(MIN_NUMBER, MAX_NUMBER)
     step = randint(MIN_STEP, MAX_STEP)
     length = randint(MIN_LENGTH, MAX_LENGTH)
     hidden_index = randint(0, length - 1)
-    progression = arithmetic_prog(first_number, step, length)
+    progression = generate_progression(first_number, step, length)
     correct_answer = str(progression[hidden_index])
     progression[hidden_index] = '..'
     question = ' '.join(map(str, progression))
