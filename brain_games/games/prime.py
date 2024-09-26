@@ -4,19 +4,17 @@ from random import randint
 
 MIN_NUMBER = 0
 MAX_NUMBER = 10
+FIRST_DIVIDER = 2
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num: int) -> str:
     """Determines whether a number is prime and returns the answer."""
-    FIRST_DIVIDER = 2
-    middle_divider = int(num ** 0.5 + 1)
     if num < FIRST_DIVIDER:
         return 'no'
+    middle_divider = int(num ** 0.5 + 1)
     for i in range(FIRST_DIVIDER, middle_divider):
-        if num % i == 0:
-            return 'no'
-    return 'yes'
+        return 'no' if num % i == 0 else 'yes'
 
 
 def get_parameters() -> tuple[str, str]:
