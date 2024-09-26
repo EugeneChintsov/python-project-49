@@ -3,6 +3,26 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/fbb70d498d4bd1d54bda/maintainability)](https://codeclimate.com/github/EugeneChintsov/python-project-49/maintainability)
 
+### Links
+
+This project was built using these tools:
+
+| Tool                                                                        | Description                                             |
+|-----------------------------------------------------------------------------|---------------------------------------------------------|
+|                                                                             |                                                         |
+| [poetry](https://python-poetry.org/)                                    |  "Python dependency management and packaging made easy" |
+| [flake8](https://flake8.pycqa.org/)                                         | "Your tool for style guide enforcement" |
+
+---
+
+
+
+
+
+
+
+
+
 # Description
 "Brain Games" is a set of five console games based on popular mobile apps for brain training. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered completed. Incorrect answers end the game and prompt you to play it again. Games:
 
