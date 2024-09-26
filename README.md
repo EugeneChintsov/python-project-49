@@ -4,35 +4,31 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/fbb70d498d4bd1d54bda/maintainability)](https://codeclimate.com/github/EugeneChintsov/python-project-49/maintainability)
 
 # Description
-"Mind Games" is a set of five console games based on popular mobile apps for brain training. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered completed. Incorrect answers end the game and prompt you to play it again. Games:
+"Brain Games" is a set of five console games based on popular mobile apps for brain training. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered completed. Incorrect answers end the game and prompt you to play it again. Games:
 
 - Calculator. Arithmetic expressions that need to be calculated
-
-  https://asciinema.org/a/jkrhOEiwK4xbtmKFgl7ed4kzq
+  [Demo](https://asciinema.org/a/jkrhOEiwK4xbtmKFgl7ed4kzq)
   
 - Progression. Finding missing numbers in a sequence of numbers
-  
-  https://asciinema.org/a/OPAYJ1p0WnrK1EM3FgkIAH5L9
+  [Demo](https://asciinema.org/a/OPAYJ1p0WnrK1EM3FgkIAH5L9)
   
 - Definition of an even number
-
-  https://asciinema.org/a/hMg0W8PJBryZWoJVKwTDO8uxD
+  [Demo](https://asciinema.org/a/hMg0W8PJBryZWoJVKwTDO8uxD)
   
 - Determining the greatest common divisor
-
-  https://asciinema.org/a/iUKTWDLXQTOOgYd1MyLKnEm55
+  [Demo](https://asciinema.org/a/iUKTWDLXQTOOgYd1MyLKnEm55)
 
 - Definition of a prime number
+  [Demo](https://asciinema.org/a/1oYL8fJsukC8KIqoYWdhx0IDb)
 
-  https://asciinema.org/a/1oYL8fJsukC8KIqoYWdhx0IDb
-
-
-
-# How to run:
+# Install:
 1. `git clone git@github.com:EugeneChintsov/python-project-49.git`
 
 2. `cd python-project-49`
 
 3. `make deploy`
 
-https://asciinema.org/a/p7YcOp6CH1aITP4Z6qqHbhVBw
+    [Demo](https://asciinema.org/a/p7YcOp6CH1aITP4Z6qqHbhVBw)
+
+# Uninstall:
+`make package-uninstall`
