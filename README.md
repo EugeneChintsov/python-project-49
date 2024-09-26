@@ -28,10 +28,10 @@
 
 
 
-*Setup:*
-1. `clone `
+# How to run:
+1. `git clone git@github.com:EugeneChintsov/python-project-49.git`
 
-2. `cd `
+2. `cd python-project-49`
 
 3. `make deploy`
 
