@@ -1,4 +1,5 @@
 ### Hexlet tests and linter status:
+
 [![Actions Status](https://github.com/EugeneChintsov/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/EugeneChintsov/python-project-49/actions)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/fbb70d498d4bd1d54bda/maintainability)](https://codeclimate.com/github/EugeneChintsov/python-project-49/maintainability)
@@ -16,6 +17,7 @@ This project was built using these tools:
 ---
 
 # Description
+
 "Brain Games" is a set of five console games based on popular mobile apps for brain training. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered completed. Incorrect answers end the game and prompt you to play it again. Games:
 
 - Calculator. Arithmetic expressions that need to be calculated
@@ -34,6 +36,7 @@ This project was built using these tools:
   [View demo](https://asciinema.org/a/1oYL8fJsukC8KIqoYWdhx0IDb)
 
 # Install:
+
 1. `git clone git@github.com:EugeneChintsov/python-project-49.git`
 
 2. `cd python-project-49`
@@ -43,4 +46,5 @@ This project was built using these tools:
     [View demo](https://asciinema.org/a/p7YcOp6CH1aITP4Z6qqHbhVBw)
 
 # Uninstall:
+
 `make package-uninstall`
