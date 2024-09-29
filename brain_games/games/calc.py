@@ -5,6 +5,7 @@ from operator import add, sub, mul
 
 MIN_NUMBER = -10
 MAX_NUMBER = 10
+OPERATORS = ('+-*')
 DESCRIPTION = 'What is the result of the expression?'
 
 
@@ -19,9 +20,9 @@ def calculate(operator: str, num1: int, num2: int) -> int:
     return result
 
 
-def get_parameters() -> tuple[str, str]:
+def generate_game() -> tuple[str, str]:
     """Release game logic and return parameters for game engine"""
-    operator = choice('+-*')
+    operator = choice(OPERATORS)
     number1 = randint(MIN_NUMBER, MAX_NUMBER)
     number2 = randint(MIN_NUMBER, MAX_NUMBER)
     correct_answer = str(calculate(operator, number1, number2))
