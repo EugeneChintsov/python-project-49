@@ -16,7 +16,7 @@ This project was built using these tools:
 
 ---
 
-# Description
+### Description
 
 "Brain Games" is a set of five console games based on popular mobile apps for brain training. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered completed. Incorrect answers end the game and prompt you to play it again. Games:
 
@@ -35,7 +35,11 @@ This project was built using these tools:
 - Definition of a prime number
   [View demo](https://asciinema.org/a/1oYL8fJsukC8KIqoYWdhx0IDb)
 
-# Install
+### Requirements
+In order to install the project, you will need in your working environment:
+- **Poetry** : [official installation](https://python-poetry.org/docs/#installation).
+-    **Pip** : [official installation](https://pip.pypa.io/en/latest/installation/).
+### Install
 
 1. `git clone git@github.com:EugeneChintsov/python-project-49.git`
 
@@ -45,6 +49,6 @@ This project was built using these tools:
 
     [View demo](https://asciinema.org/a/p7YcOp6CH1aITP4Z6qqHbhVBw)
 
-# Uninstall
+### Uninstall
 
 `make package-uninstall`
