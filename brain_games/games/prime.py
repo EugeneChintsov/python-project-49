@@ -20,9 +20,8 @@ def is_prime(num: int) -> bool:
 def generate_game() -> tuple[str, str]:
     """Release game logic and return parameters for game engine"""
     number = randint(MIN_NUMBER, MAX_NUMBER)
+    correct_answer = 'no'
     if is_prime(number):
         correct_answer = 'yes'
-    else:
-        correct_answer = 'no'
     question = str(number)
     return question, correct_answer
