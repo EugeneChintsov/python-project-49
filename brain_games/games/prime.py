@@ -12,9 +12,11 @@ def is_prime(num: int) -> bool:
     """Determines whether a number is prime and returns the answer."""
     if num < FIRST_DIVIDER:
         return False
-    middle_divider = int(num ** 0.5 + 1)
+    middle_divider = int(num ** 0.5) + 1
     for i in range(FIRST_DIVIDER, middle_divider):
-        return False if num % i == 0 else True
+        if num % i == 0:
+            return False
+    return True
 
 
 def generate_game() -> tuple[str, str]:
