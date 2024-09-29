@@ -1,4 +1,4 @@
-### Hexlet tests and linter status:
+## Hexlet tests and linter status
 
 [![Actions Status](https://github.com/EugeneChintsov/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/EugeneChintsov/python-project-49/actions)
 
@@ -35,7 +35,7 @@ This project was built using these tools:
 - Definition of a prime number
   [View demo](https://asciinema.org/a/1oYL8fJsukC8KIqoYWdhx0IDb)
 
-# Install:
+# Install
 
 1. `git clone git@github.com:EugeneChintsov/python-project-49.git`
 
@@ -45,6 +45,6 @@ This project was built using these tools:
 
     [View demo](https://asciinema.org/a/p7YcOp6CH1aITP4Z6qqHbhVBw)
 
-# Uninstall:
+# Uninstall
 
 `make package-uninstall`
