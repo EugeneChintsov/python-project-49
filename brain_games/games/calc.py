@@ -9,14 +9,14 @@ OPERATORS = ('+-*')
 DESCRIPTION = 'What is the result of the expression?'
 
 
-def calculate(operator: str, num1: int, num2: int) -> int:
+def calculate(operator: str, number1: int, number2: int) -> int:
     """Apply operator for two numbers and return result"""
     if operator == '+':
-        result = add(num1, num2)
+        result = add(number1, number2)
     elif operator == '-':
-        result = sub(num1, num2)
+        result = sub(number1, number2)
     elif operator == '*':
-        result = mul(num1, num2)
+        result = mul(number1, number2)
     return result
 
 
