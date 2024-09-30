@@ -2,6 +2,7 @@
 import prompt
 from types import ModuleType
 
+
 QUESTION_COUNT = 3
 
 
