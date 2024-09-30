@@ -20,7 +20,7 @@ def run(game: any) -> None:
                 f'"{answer}" is wrong answer ;(.'
                 f'Correct answer was "{correct_answer}".\n'
                 f'Let\'s try again, {username}!'
-                )
+            )
             return
         print('Correct!')
     print(f'Congratulations, {username}!')
