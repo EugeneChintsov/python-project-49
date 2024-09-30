@@ -1,11 +1,11 @@
 """This module describes the general logic for all games."""
 import prompt
-
+from types import ModuleType
 
 QUESTION_COUNT = 3
 
 
-def run(game: any) -> None:
+def run(game: ModuleType) -> None:
     """Launches the game."""
     print('Welcome to the Brain Games!')
     username = prompt.string('May I have your name? \n')
