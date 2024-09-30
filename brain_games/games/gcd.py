@@ -7,9 +7,9 @@ MAX_NUMBER = 10
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def find_gcd(num1: int, num2: int) -> int:
+def find_gcd(number1: int, number2: int) -> int:
     """Determines the greatest common divisor of two numbers."""
-    return num1 if num2 == 0 else find_gcd(num2, num1 % num2)
+    return number1 if number2 == 0 else find_gcd(number2, number1 % number2)
 
 
 def generate_game() -> tuple[str, str]:
