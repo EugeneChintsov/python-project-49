@@ -7,16 +7,14 @@ MAX_NUMBER = 10
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def is_even(num: int) -> bool:
+def is_even(number: int) -> str:
     """Determines whether a number is even and returns the answer."""
-    return True if num % 2 == 0 else False
+    return 'yes' if number % 2 == 0 else 'no'
 
 
 def generate_game() -> tuple[str, str]:
     """Release game logic and return parameters for game engine"""
     number = randint(MIN_NUMBER, MAX_NUMBER)
-    correct_answer = 'no'
-    if is_even(number):
-        correct_answer = 'yes'
+    correct_answer = is_even(number)
     question = str(number)
     return question, correct_answer
