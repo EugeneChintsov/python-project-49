@@ -8,13 +8,13 @@ FIRST_DIVIDER = 2
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime(num: int) -> bool:
+def is_prime(number: int) -> bool:
     """Determines whether a number is prime and returns the answer."""
-    if num < FIRST_DIVIDER:
+    if number < FIRST_DIVIDER:
         return False
-    middle_divider = int(num ** 0.5) + 1
+    middle_divider = int(number ** 0.5) + 1
     for i in range(FIRST_DIVIDER, middle_divider):
-        if num % i == 0:
+        if number % i == 0:
             return False
     return True
 
@@ -22,8 +22,6 @@ def is_prime(num: int) -> bool:
 def generate_game() -> tuple[str, str]:
     """Release game logic and return parameters for game engine"""
     number = randint(MIN_NUMBER, MAX_NUMBER)
-    correct_answer = 'no'
-    if is_prime(number):
-        correct_answer = 'yes'
+    correct_answer = 'yes' if is_prime(number) else 'no'
     question = str(number)
     return question, correct_answer
